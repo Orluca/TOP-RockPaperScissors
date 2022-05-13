@@ -17,25 +17,43 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
+  // Compares the choices by computer and player and returns the outcome
   if (computerSelection === playerSelection) {
-    return "It's a tie!";
+    return "IT'S A TIE!";
   } else if (computerSelection === "rock" && playerSelection === "scissors") {
-    return "The Computer wins!";
+    return "THE COMPUTER WINS!";
   } else if (computerSelection === "paper" && playerSelection === "rock") {
-    return "The Computer wins!";
+    return "THE COMPUTER WINS!";
   } else if (computerSelection === "scissors" && playerSelection === "paper") {
-    return "The Computer wins!";
+    return "THE COMPUTER WINS!";
   } else {
-    return "The Player wins!";
+    return "THE PLAYER WINS!";
   }
 }
 
-computerSelection = computerPlay();
-playerSelection = prompt(
-  "Please enter 'Rock', 'Paper or 'Scissors'."
-).toLowerCase();
+function game() {
+  // Plays 5 rounds of the game
+  for (let i = 0; i < 5; i++) {
+    // First, determine the choices of both players
+    computerSelection = computerPlay();
+    playerSelection = prompt(
+      "Please enter 'Rock', 'Paper or 'Scissors'."
+    ).toLowerCase();
 
-console.log(`Computer chooses ${computerSelection}`);
-console.log(`Player chooses ${playerSelection}`);
+    // Next, play a round with those choices
+    if (playRound(playerSelection, computerSelection) === "It's a tie!") {
+      console.log(
+        `It's a tie! Both players chose ${playerSelection.toUpperCase()}.`
+      );
+    } else {
+      console.log(
+        `${playRound(
+          playerSelection,
+          computerSelection
+        )} The computer chose ${computerSelection.toUpperCase()} and the player chose ${playerSelection.toUpperCase()}.`
+      );
+    }
+  }
+}
 
-console.log(playRound(playerSelection, computerSelection));
+game();
