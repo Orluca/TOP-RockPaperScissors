@@ -16,6 +16,13 @@ function computerPlay() {
   return computerSelection;
 }
 
+function formatInput(string) {
+  // This function formats the user input, so that it doesn't matter if you write "rock", "Rock" or "ROcK"
+  return string.toLowerCase();
+}
+
 computerSelection = computerPlay();
+playerSelection = prompt();
 
 console.log(`Computer chooses ${computerSelection}`);
+console.log(`Player chooses ${playerSelection}`);
