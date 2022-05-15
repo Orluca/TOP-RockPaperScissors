@@ -1,6 +1,6 @@
 # TOP-RockPaperScissors
 
-My first finished webpage, following the "Rock, Paper, Scissors" exercise from "The Odin Project".
+My first proper finished webpage, following the "Rock, Paper, Scissors" exercise from "The Odin Project".
 To view the page click here: https://orluca.github.io/TOP-RockPaperScissors/
 
 ### Things that I learned:
