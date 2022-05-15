@@ -5,9 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Rock, Paper Scissors</title>
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <div class="content">
+      <h1>ROCK, PAPER, SCISSORS</h1>
+      <h2 class="welcome-text">Choose your Weapon:</h2>
+
+      <div class="buttons">
+        <button id="btn-rock">🗻ROCK</button>
+        <button id="btn-paper">📃PAPER</button>
+        <button id="btn-scissors">✂SCISSORS</button>
+      </div>
+
+      <div class="scoreboard">
+        <div class="scoreboard-sub">
+          <h4>Your Score:</h4>
+          <p id="player-score">0</p>
+        </div>
+        <div class="scoreboard-sub">
+          <h4>Computer Score:</h4>
+          <p id="computer-score">0</p>
+        </div>
+      </div>
+
+      <div class="battleground">
+        <div id="player-weapon"></div>
+        <div id="winner-sign"></div>
+        <div id="computer-weapon"></div>
+      </div>
+    </div>
+
+    <div id="popup-window" class="popup-background">
+      <div class="popup-window-content" id="popup-window-background">
+        <p id="popup-text">SL DLKJ FLKJS DF</p>
+        <div class="final-score">
+          <div class="final-scoreboard-sub">
+            <h4>Player Score:</h4>
+            <p id="player-score-final"></p>
+          </div>
+          <div class="final-scoreboard-sub">
+            <h4>Computer Score:</h4>
+            <p id="computer-score-final"></p>
+          </div>
+        </div>
+        <button id="btn-restart">Play again</button>
+      </div>
+    </div>
   </body>
 </html>
