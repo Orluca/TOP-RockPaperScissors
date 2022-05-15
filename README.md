@@ -1,6 +1,7 @@
 # TOP-RockPaperScissors
 
 My first finished webpage, following the "Rock, Paper, Scissors" exercise from "The Odin Project".
+To view the page click here: https://orluca.github.io/TOP-RockPaperScissors/
 
 ### Things that I learned:
 
@@ -14,3 +15,4 @@ My first finished webpage, following the "Rock, Paper, Scissors" exercise from "
 - Animations should probably be cancelled and reset if you press the buttons really fast.
 - Design wise, things don't feel 100% centered (I think one of the reasons could be the emojis, which seem to act a bit weird in that regard).
 - Not optimized for smaller screens/mobile devices at all (I think _media queries_ would be used for that).
+- Need to commit and use Git A LOT more.
